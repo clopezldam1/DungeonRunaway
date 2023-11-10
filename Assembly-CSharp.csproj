@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\player.cs" />
+    <Compile Include="Assets\Scripts\bolaFuego.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Imports\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
