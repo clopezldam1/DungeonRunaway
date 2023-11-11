@@ -7,21 +7,28 @@ public class player : MonoBehaviour
     public float speed = 3;
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
+    private Animator playerAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
-        
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //usar Update para detección de inputs:
-        float moveX = Input.GetAxisRaw("Horizontal"); //devuelve -1 si le das a flecha left (or tecla "A"), devuelve 1 si le das a flecha right (or tecla "D"), devuelve 0 si no apretas ninguna de las dos
-        float moveY = Input.GetAxisRaw("Vertical"); //returns 1 if up/"W", returns -1 if down/"S", returns 0 if nothing
-        moveInput = new Vector2(moveX, moveY).normalized;
+            float moveX = Input.GetAxisRaw("Horizontal"); //devuelve -1 si le das a flecha left (or tecla "A"), devuelve 1 si le das a flecha right (or tecla "D"), devuelve 0 si no apretas ninguna de las dos
+            float moveY = Input.GetAxisRaw("Vertical"); //returns 1 if up/"W", returns -1 if down/"S", returns 0 if nothing
+            moveInput = new Vector2(moveX, moveY).normalized;
+
+        //usar update para transición de estados animator:
+            //[Idle <-> walking]
+            playerAnimator.SetFloat("Horizontal", moveX);
+            playerAnimator.SetFloat("Vertical", moveY);
+            playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
     }
 
     //FixedUpdate se va llamando cada vez que hay un cambio en las físicas del juego (POR DEFECTO SE LLAMA 50 VECES POR SEGUNDO)
