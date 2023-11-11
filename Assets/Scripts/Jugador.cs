@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    public float speed = 3;
+    private Rigidbody2D playerRb;
+    private Vector2 moveInput;
+
     // Start is called before the first frame update
     void Start()
     {
+        playerRb = GetComponent<Rigidbody2D>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //usar Update para detección de inputs:
+        float moveX = Input.GetAxisRaw("Horizontal"); //devuelve -1 si le das a flecha left (or tecla "A"), devuelve 1 si le das a flecha right (or tecla "D"), devuelve 0 si no apretas ninguna de las dos
+        float moveY = Input.GetAxisRaw("Vertical"); //returns 1 if up/"W", returns -1 if down/"S", returns 0 if nothing
+        moveInput = new Vector2(moveX, moveY);
+    }
+
+    //FixedUpdate se va llamando cada vez que hay un cambio en las físicas del juego (POR DEFECTO SE LLAMA 50 VECES POR SEGUNDO)
+    private void FixedUpdate()
+    {
+        //NOTA: playerRb.position te da la posicion actual del jugador  (antes de moverse)
+        playerRb.MovePosition(playerRb.position + (moveInput * speed * Time.fixedDeltaTime * 2) );
+        /* Pasar por parametro pos de destino (aka, pos de donde quieres moverlo):
+         * A la pos actual le sumamos 1 (bc presionas tecla 1 vez) multiplicado por la velocidad en la que se mueve el personaje multiplicsdo por FixedDeltaTime para que la velocidad sea siempre la misma independientemente del rate de refesco de fixedUpdate (FixedDeltaTime te devuelve el tiempo que ha pasado desde la última llamada a fixedUpdate) multiplicado por 2 para darle mas velocidad bc iba muy lento*/
+
     }
 }
