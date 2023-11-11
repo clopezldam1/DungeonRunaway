@@ -25,10 +25,11 @@ public class player : MonoBehaviour
             moveInput = new Vector2(moveX, moveY).normalized;
 
         //usar update para transición de estados animator:
-            //[Idle <-> walking]
+            //[Idle <-> walking] 
             playerAnimator.SetFloat("Horizontal", moveX);
             playerAnimator.SetFloat("Vertical", moveY);
-            playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
+            playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude); 
+        //CUANDO TE MUEVES EN DIAGONAL HACIA LA IZQUEIREDA (ARRRIBA O ABAJO) EL SPRITE DESAPARECE
     }
 
     //FixedUpdate se va llamando cada vez que hay un cambio en las físicas del juego (POR DEFECTO SE LLAMA 50 VECES POR SEGUNDO)
