@@ -29,7 +29,7 @@ public class player : MonoBehaviour
             playerAnimator.SetFloat("Horizontal", moveX);
             playerAnimator.SetFloat("Vertical", moveY);
             playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude); 
-        //CUANDO TE MUEVES EN DIAGONAL HACIA LA IZQUEIREDA (ARRRIBA O ABAJO) EL SPRITE DESAPARECE
+     
     }
 
     //FixedUpdate se va llamando cada vez que hay un cambio en las físicas del juego (POR DEFECTO SE LLAMA 50 VECES POR SEGUNDO)
