@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 94b5c16c38e118640862b72461281f64
+guid: 1a7169a7974c1c048acb17ca61f1de5f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: healthbar_0
+      name: healthbar_clean_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1158
-        width: 1188
-        height: 264
+        y: 445
+        width: 456
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00cdb508be928b94d97f88dc4233c176
-      internalID: 633387630
+      spriteID: 650af7bcec588d3418937088444b1491
+      internalID: 438462041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: healthbar_1
+      name: healthbar_clean_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 898
-        width: 1188
-        height: 264
+        y: 344
+        width: 456
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b114d106f77f3f438adf8f4ca3cd348
-      internalID: -519553479
+      spriteID: 7ece6b867df4fa045b2dcb664304f4a0
+      internalID: -1638644479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: healthbar_2
+      name: healthbar_clean_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 637
-        width: 1188
-        height: 264
+        y: 245
+        width: 456
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e2d0b386cee5a644be392d2f55d282f
-      internalID: 1714137814
+      spriteID: 5d0ecb4566d030247bd7138bfd9cac34
+      internalID: -253458925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: healthbar_3
+      name: healthbar_clean_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 337
-        width: 1188
-        height: 264
+        y: 129
+        width: 456
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c27b559be4637f419266105585e37ac
-      internalID: 258033315
+      spriteID: 932fc3f7973e36140b53536bb4c15a5c
+      internalID: 710484583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: healthbar_4
+      name: healthbar_clean_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 28
-        width: 1188
-        height: 264
+        y: 10
+        width: 456
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed62a2e8afcf2c642b12c3024779301f
-      internalID: 739709778
+      spriteID: bea1a34c130e73842884de4fec886a36
+      internalID: 131200186
       vertices: []
       indices: 
       edges: []
@@ -225,11 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      healthbar_0: 633387630
-      healthbar_1: -519553479
-      healthbar_2: 1714137814
-      healthbar_3: 258033315
-      healthbar_4: 739709778
+      healthbar_clean_0: 438462041
+      healthbar_clean_1: -1638644479
+      healthbar_clean_2: -253458925
+      healthbar_clean_3: 710484583
+      healthbar_clean_4: 131200186
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
