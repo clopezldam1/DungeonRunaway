@@ -36,7 +36,7 @@ public class player : MonoBehaviour
     private void FixedUpdate()
     {
         //NOTA: playerRb.position te da la posicion actual del jugador  (antes de moverse)
-        playerRb.MovePosition(playerRb.position + (moveInput * speed * Time.fixedDeltaTime * 2) );
+        playerRb.MovePosition(playerRb.position + (moveInput * speed * Time.fixedDeltaTime * 3) );
         /* Pasar por parametro pos de destino (aka, pos de donde quieres moverlo):
          * A la pos actual le sumamos 1 (bc presionas tecla 1 vez) multiplicado por la velocidad en la que se mueve el personaje multiplicsdo por FixedDeltaTime para que la velocidad sea siempre la misma independientemente del rate de refesco de fixedUpdate (FixedDeltaTime te devuelve el tiempo que ha pasado desde la última llamada a fixedUpdate) multiplicado por 2 para darle mas velocidad bc iba muy lento*/
         /* si vas en diagonal como suma el +-1 de ambas teclas, va un 40% más rápido. 
