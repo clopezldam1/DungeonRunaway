@@ -22,7 +22,7 @@ public class player : MonoBehaviour
         //usar Update para detección de inputs:
             float moveX = Input.GetAxisRaw("Horizontal"); //devuelve -1 si le das a flecha left (or tecla "A"), devuelve 1 si le das a flecha right (or tecla "D"), devuelve 0 si no apretas ninguna de las dos
             float moveY = Input.GetAxisRaw("Vertical"); //returns 1 if up/"W", returns -1 if down/"S", returns 0 if nothing
-            moveInput = new Vector2(moveX, moveY).normalized;
+            moveInput = new Vector2(moveX, moveY).normalized; //.normalized para que en diagonal vaya a misma velocidad que en otras direcciones
 
         //usar update para transición de estados animator:
             //[Idle <-> walking] 
