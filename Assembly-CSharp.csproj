@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Jugador.cs" />
-    <Compile Include="Assets\cameraController.cs" />
     <Compile Include="Assets\Scripts\BolaFuego.cs" />
   </ItemGroup>
   <ItemGroup>

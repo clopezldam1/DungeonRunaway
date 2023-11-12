@@ -10110,7 +10110,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.43, y: 4.47, z: 0}
-  m_LocalScale: {x: 1.7817116, y: 1.7817115, z: 1.7817116}
+  m_LocalScale: {x: 1.6399764, y: 1.6399763, z: 1.6399764}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10181,8 +10181,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.18670034, y: -0.01704979, z: 0}
-    m_Extent: {x: 9.173901, y: 8.29475, z: 0}
+    m_Center: {x: 0.18400002, y: -0.013499737, z: 0}
+    m_Extent: {x: 9.1811, y: 8.292601, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10306,7 +10306,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 12.020766
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10331,9 +10331,9 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.43, y: 4.47, z: -10}
-  m_LocalScale: {x: 3.4994533, y: 1.2875, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -2.4299994, y: 4.47, z: -10}
+  m_LocalScale: {x: 2, y: 0.73582923, z: 0.5715178}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1971450484}
   m_Father: {fileID: 0}
@@ -10489,8 +10489,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.43199992, y: 0.9180999, z: 0}
-    m_Extent: {x: 6.2852, y: 7.1953998, z: 0}
+    m_Center: {x: 0.4382999, y: 0.92275, z: 0}
+    m_Extent: {x: 6.2876997, y: 7.19035, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10629,6 +10629,10 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 3.8186998
       objectReference: {fileID: 0}
+    - target: {fileID: 7671359541675752902, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8050824343841679916, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
       value: 0.11385
@@ -10745,23 +10749,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
-  m_LookaheadTime: 0
+  m_TrackedObjectOffset: {x: 2, y: 0, z: 0}
+  m_LookaheadTime: 0.195
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
+  m_XDamping: 2
+  m_YDamping: 2
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 0
+  m_DeadZoneWidth: 0.1484875
+  m_DeadZoneHeight: 0.36
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.8
+  m_SoftZoneWidth: 2
+  m_SoftZoneHeight: 1.21
   m_BiasX: 0
   m_BiasY: 0
   m_CenterOnActivate: 1
@@ -20957,6 +20961,10 @@ PrefabInstance:
       propertyPath: m_LocalBounds.m_Extent.y
       value: 3.81395
       objectReference: {fileID: 0}
+    - target: {fileID: 7671359541675752902, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8050824343841679916, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
       value: 0.118499994
@@ -21037,6 +21045,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370253102}
   - component: {fileID: 1370253101}
+  - component: {fileID: 1370253103}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: MainCamera
@@ -21066,7 +21075,7 @@ MonoBehaviour:
   m_Follow: {fileID: 418707963}
   m_Lens:
     FieldOfView: 34
-    OrthographicSize: 12.020766
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -21092,13 +21101,28 @@ Transform:
   m_GameObject: {fileID: 1370253100}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.43, y: 4.47, z: -10}
+  m_LocalPosition: {x: -2.4299994, y: 4.47, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 816393238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1370253103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370253100}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Offset: {x: 4, y: 0, z: 0}
+  m_ApplyAfter: 1
+  m_PreserveComposition: 0
 --- !u!1001 &1486953027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21138,6 +21162,10 @@ PrefabInstance:
     - target: {fileID: 7670267006734843348, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
       value: 3.8076
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671359541675752902, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8050824343841679916, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
@@ -90438,6 +90466,10 @@ PrefabInstance:
     - target: {fileID: 7670267006734843348, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
       propertyPath: m_LocalBounds.m_Extent.y
       value: 3.8070998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671359541675752902, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8050824343841679916, guid: 0638b64a1929dc3418b28e40211c5021, type: 3}
       propertyPath: m_LocalBounds.m_Center.x
