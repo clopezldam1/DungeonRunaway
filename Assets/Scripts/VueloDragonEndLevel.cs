@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -10,6 +11,7 @@ public class VueloDragonEndLevel : MonoBehaviour
     private Rigidbody2D rb;
     float vertical;
     float horizontal;
+    private Animator playerAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,9 @@ public class VueloDragonEndLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerAnimator = GetComponent<Animator>();
+        playerAnimator.SetBool("isFlying", true);
+
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         Vector2 velocidad = rb.velocity;
@@ -27,7 +32,8 @@ public class VueloDragonEndLevel : MonoBehaviour
         velocidad.x = horizontal * speed * 5;
         rb.velocity = velocidad;
 
-        if (rb.position.y < 500) { 
+        if (rb.position.y < 500) {
+            Console.WriteLine("Jugador ha muerto");
             //cambiar escena a "You died" screen
         }
 
