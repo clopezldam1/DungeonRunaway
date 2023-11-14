@@ -95,6 +95,7 @@
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\bolaFuego.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\VueloDragonEndLevel.cs" />
   </ItemGroup>
@@ -923,6 +924,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SimpleInput.Editor.csproj">
+      <Project>{CB940D4F-5103-91C5-2F7B-1B848BB8D730}</Project>
+      <Name>SimpleInput.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleInput.Runtime.csproj">
+      <Project>{813FE5F4-28DB-5DDE-6A41-A95BB11BA479}</Project>
+      <Name>SimpleInput.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
