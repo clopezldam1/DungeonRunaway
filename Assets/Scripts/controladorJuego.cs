@@ -5,12 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class controladorJuego : MonoBehaviour
+public class ControladorJuego : MonoBehaviour
 {
 
     [SerializeField]  Image healthbar;
     [SerializeField]  Sprite[] healthbarSprites;
-    [SerializeField]  player jugador;
+    [SerializeField]  Jugador jugador;
     private int health;
 
     // Start is called before the first frame update

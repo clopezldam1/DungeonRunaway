@@ -6,7 +6,7 @@ using UnityEditor.U2D;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class nextSkinMainMenu : MonoBehaviour
+public class SkinSelectMainMenu : MonoBehaviour
 {
     [SerializeField] private Image imagen;
     [SerializeField] private Button next;
