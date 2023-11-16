@@ -94,6 +94,7 @@
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\Scripts\ScrollerAnimatedBg.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Scripts\bat.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\Imports\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
