@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6416139732995113286}
   - component: {fileID: 918849167946336266}
   - component: {fileID: 4446285539360750690}
+  - component: {fileID: 8711588741065662163}
+  - component: {fileID: 8150040075785885476}
   m_Layer: 0
   m_Name: BolaFuego
   m_TagString: Untagged
@@ -28,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 6558663583800351539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 1.265884, z: 0}
-  m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
+  m_LocalPosition: {x: -0.41704, y: 1.276, z: 0}
+  m_LocalScale: {x: 1.7906904, y: 1.7906904, z: 1.7906904}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 657325705530677714}
@@ -135,6 +137,63 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!61 &8711588741065662163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558663583800351539}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.40355468, y: 0.017714389}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.12284615, y: 0.5246944}
+    oldSize: {x: 1.07, y: 0.7}
+    newSize: {x: 0.89, y: 0.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.07, y: 0.3289951}
+  m_EdgeRadius: 0
+--- !u!114 &8150040075785885476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6558663583800351539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629dd6b5528034b4bbaa85262f141205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7321951317641368515
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,8 +261,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.35375, y: -0.0038499832, z: 0}
-    m_Extent: {x: 5.17325, y: 3.77755, z: 0}
+    m_Center: {x: -1.3590502, y: 0.0041000843, z: 0}
+    m_Extent: {x: 5.15935, y: 3.7858, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -357,8 +416,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -2.5894, y: 0.062649995, z: 0}
-    m_Extent: {x: 3.5930002, y: 1.03585, z: 0}
+    m_Center: {x: -2.5842001, y: 0.063550025, z: 0}
+    m_Extent: {x: 3.5999, y: 1.04305, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -459,7 +518,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.78000003, y: 0.01999998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.66412, y: 0.66412, z: 0.66412}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7316781045873919474}
@@ -534,8 +593,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -1.6065501, y: 0.00074994564, z: 0}
-    m_Extent: {x: 3.12355, y: 1.47955, z: 0}
+    m_Center: {x: -1.6036501, y: 0.00055003166, z: 0}
+    m_Extent: {x: 3.11765, y: 1.47375, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

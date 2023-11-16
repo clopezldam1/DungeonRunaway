@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Jugador : MonoBehaviour
 {
@@ -21,8 +22,12 @@ public class Jugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Flip();
+        //RestoreRotate();
+      
+
         //usar Update para detección de inputs:
-            float moveX = Input.GetAxisRaw("Horizontal"); 
+        float moveX = Input.GetAxisRaw("Horizontal"); 
             float moveY = Input.GetAxisRaw("Vertical");
             moveInput = new Vector2(moveX, moveY).normalized; //.normalized para que en diagonal vaya a misma velocidad que en otras direcciones
 
@@ -49,5 +54,20 @@ public class Jugador : MonoBehaviour
     private void FixedUpdate()
     {
         playerRb.MovePosition(playerRb.position + (moveInput * speed * Time.fixedDeltaTime * 4) );
+    }
+
+    private void Flip()
+    {
+        if (Input.GetMouseButtonDown(0))  //(Mouse.current.leftButton.wasPressedThisFrame)
+            {
+            transform.Rotate(0, 180, 0);
+        }
+    }
+    private void RestoreRotate()
+    {
+        if (Input.GetMouseButtonUp(0))
+        {
+            transform.Rotate(0, 0, 0);
+        }
     }
 }
