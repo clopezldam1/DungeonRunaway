@@ -15,7 +15,6 @@ public class nextSkinMainMenu : MonoBehaviour
 
     [SerializeField] Sprite[] sprites;
 
-    private Canvas canvas;
     private int currentSkin; //index del sprite en sprites[]
     private string nombreSkin;
 
@@ -23,7 +22,6 @@ public class nextSkinMainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvas = imagen.GetComponentInParent<Canvas>();
         currentSkin = 0;
         imagen.sprite = sprites[0];
         nombreSkin = "Green Dragon";
