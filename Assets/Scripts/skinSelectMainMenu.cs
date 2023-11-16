@@ -13,38 +13,46 @@ public class nextSkinMainMenu : MonoBehaviour
     [SerializeField] private Button prev;
     [SerializeField] private TextMeshProUGUI nomDragon;
 
+    [SerializeField] Sprite[] sprites;
+
     private Canvas canvas;
-    private Sprite skin;
+    private int currentSkin; //index del sprite en sprites[]
+    private string nombreSkin;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        canvas = GetComponent<Canvas>();
-        skin = canvas.GetComponentInChildren<Image>().sprite; //we get the current skin 
-        imagen = canvas.GetComponentInChildren<Image>();
-       
+        canvas = imagen.GetComponentInParent<Canvas>();
+        currentSkin = 0;
+        imagen.sprite = sprites[0];
+        nombreSkin = "Green Dragon";
+        nomDragon.text = nombreSkin;
     }
 
     public void nextSkin()
     {
-
-        nomDragon.text = "aaaa";
-        nomDragon.text = skin.GetSpriteID().ToString(); //esto peta
-
-        nomDragon.text = "bbbbb"; //aqui no llega
-
-        // imagen.sprite = Image().sprite("Assets/Sprites/Dragon1/Attack_017.png");
+        switch (currentSkin) {
+            case 0: imagen.sprite = sprites[1]; currentSkin = 1; nombreSkin = "Black Dragon"; break;   
+            case 1: imagen.sprite = sprites[2]; currentSkin = 2; nombreSkin = "Red Dragon"; break;
+            case 2: imagen.sprite = sprites[0]; currentSkin = 0; nombreSkin = "Green Dragon"; break;
+        }
+        nomDragon.text = nombreSkin;
     }
 
     public void previousSkin()
     {
-
-        imagen.sprite = skin;
+        switch (currentSkin)
+        {
+            case 0: imagen.sprite = sprites[2]; currentSkin = 2; nombreSkin = "Red Dragon"; break;
+            case 1: imagen.sprite = sprites[0]; currentSkin = 0; nombreSkin = "Green Dragon"; break;
+            case 2: imagen.sprite = sprites[1]; currentSkin = 1; nombreSkin = "Black Dragon"; break;
+        }
+        nomDragon.text = nombreSkin;
     }
 
     public void confirmSelect()
     {
-
+        //enviar a level1 la info del sprite que debe utilizar
     }
 }
