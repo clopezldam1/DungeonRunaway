@@ -9,14 +9,13 @@ public class Jugador : MonoBehaviour
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
     private Animator playerAnimator;
-    public int health;
+    public float health = 5f;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        health = 5;
     }
 
     // Update is called once per frame
@@ -45,6 +44,7 @@ public class Jugador : MonoBehaviour
 
             //[hit <-> dead] 
             //todo
+            //playerAnimator.SetFloat("Health", health);
 
             //[idle <-> attack] 
             //todo

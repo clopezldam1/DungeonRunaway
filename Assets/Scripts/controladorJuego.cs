@@ -16,7 +16,7 @@ public class ControladorJuego : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = jugador.health;
+        health = System.Convert.ToInt32(jugador.health);
         healthbar.sprite = healthbarSprites[health];
     }
 
