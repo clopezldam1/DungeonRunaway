@@ -16,12 +16,13 @@ public class DisparoBolaFuego : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //GetMouseButtonDown -> param 'button': 0=left, 1=right, 2=middle
-        if (Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(0))
-        {
-            Instantiate(fireBall, shootingPoint.position, transform.rotation);
-
-            //TODO: cambiar animation de player a attack
+        //si juego no está en pausa, puedes disparar
+        if (!SceneController.pause) {
+            //GetMouseButtonDown -> param 'button': 0=left, 1=right, 2=middle
+            if (Input.GetMouseButtonDown(1))
+            {
+                Instantiate(fireBall, shootingPoint.position, transform.rotation);
+            }
         }
       
     }

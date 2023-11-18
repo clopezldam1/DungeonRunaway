@@ -8,22 +8,28 @@ public class ChaseControlEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!SceneController.pause)
         {
-            foreach (BatWaitTrigger enemigo in grupoEnemigos)
+            if (collision.CompareTag("Player"))
             {
-                enemigo.chase = true;
+                foreach (BatWaitTrigger enemigo in grupoEnemigos)
+                {
+                    enemigo.chase = true;
+                }
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!SceneController.pause)
         {
-            foreach (BatWaitTrigger enemigo in grupoEnemigos)
+            if (collision.CompareTag("Player"))
             {
-                enemigo.chase = false;
+                foreach (BatWaitTrigger enemigo in grupoEnemigos)
+                {
+                    enemigo.chase = false;
+                }
             }
         }
     }

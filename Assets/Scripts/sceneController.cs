@@ -11,7 +11,6 @@ public class SceneController : MonoBehaviour
     [SerializeField] GameObject overlapScene;
     [SerializeField] bool canScenePause = false;
     public static bool pause; //if game is currently being paused or not
-    int activeSceneIndex;
 
     public void Start()
     {

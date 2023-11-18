@@ -587,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efcf534793d59e94c88b9a742ba4353a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexNextScene: 0
+  indexNextScene: 4
 --- !u!61 &161577191
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -96263,6 +96263,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1330532336325707218, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2421042811833540089, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_Name
       value: PauseMenu
@@ -96319,6 +96323,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5596710063800258894, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5596710063800258894, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6447623546088414557, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -96326,6 +96338,10 @@ PrefabInstance:
     - target: {fileID: 6447623546088414557, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: closePauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760917295315907499, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
