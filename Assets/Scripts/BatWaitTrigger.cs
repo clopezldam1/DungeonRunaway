@@ -19,7 +19,6 @@ namespace Bat
         void Start()
         {
             bat = new Bat();
-     
 
             player = GameObject.FindGameObjectWithTag("Player");
         }
@@ -40,7 +39,7 @@ namespace Bat
 
         }
 
-        //método que hace que el enemigo siga al jugador por el mapa
+        /**método que hace que el enemigo siga al jugador por el mapa**/
         private void ChasePlayer()
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
@@ -55,7 +54,7 @@ namespace Bat
             }
         }
 
-        //método para que enemigo siempre mire en dirección al jugador mientras le persigue
+        /**método para que enemigo siempre mire en dirección al jugador mientras le persigue**/
         private void FacingDirectionFlip()
         {
             //si el enemigo está a la derecha del jugador.... 
@@ -71,7 +70,7 @@ namespace Bat
             //si el enemigo está a la izquierda del jugador, el enemigo mirará a la derecha por defecto
         }
 
-        //método que hace que enemigo se de la vuelta y regrese a su posicion original cuando jugador no está dentro de su rango de ataque
+        /**método que hace que enemigo se de la vuelta y regrese a su posicion original cuando jugador no está dentro de su rango de ataque**/
         private void ReturnToStartPos()
         {
             transform.position = Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);

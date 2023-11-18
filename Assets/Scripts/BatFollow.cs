@@ -26,13 +26,13 @@ namespace Bat
         }
 
 
-        //método que hace que el enemigo siga al jugador por el mapa
+        /**método que hace que el enemigo siga al jugador por el mapa**/
         private void ChasePlayer()
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
 
-        //método para que enemigo siempre mire en dirección al jugador mientras le persigue
+        /**método para que enemigo siempre mire en dirección al jugador mientras le persigue**/
         private void FacingDirectionFlip()
         {
             //si el enemigo está a la derecha del jugador.... 
