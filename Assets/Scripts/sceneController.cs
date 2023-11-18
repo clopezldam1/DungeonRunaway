@@ -11,6 +11,7 @@ public class SceneController : MonoBehaviour
     [SerializeField] GameObject overlapScene;
     [SerializeField] bool canScenePause = false;
     public static bool pause; //if game is currently being paused or not
+    int activeSceneIndex;
 
     public void Start()
     {
@@ -24,20 +25,25 @@ public class SceneController : MonoBehaviour
         {
             //puedes abrir y cerrar menu pausa con "P" o "Escape"
             if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape)){
-                if (isPaused())
+                if (pause)
                 {
                     //cerrar menu pausa
+
                     LaunchPauseMenu.closePauseMenu(overlapScene);
-                    //cerrarEscena(overlapScene, this.GetComponentInParent<Scene>(),true);
-                    //pause = false;
+                    //cerrarEscena(overlapScene, this.GetComponentInParent<Scene>(),false);
+                    //cambiarEscena(activeSceneIndex);
+                    pause = false;
 
                 }
                 else
                 {
                     //abrir menu pausa
+
                     LaunchPauseMenu.launchPauseMenu(overlapScene);
                     //cargarEscena(overlapScene);
-                    //pause = true;
+                    //activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                    //cambiarEscena(3); //pausemenu index = 3
+                    pause = true;
                 }
             }
         }

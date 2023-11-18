@@ -18,12 +18,14 @@ public class LaunchPauseMenu : MonoBehaviour
     public static void launchPauseMenu(GameObject pauseMenu) {
         //Scene activeScene = SceneManager.GetActiveScene();
         //activeScene.GetRootGameObjects();
-        Instantiate(pauseMenu);
+        //Instantiate(pauseMenu);
+        pauseMenu.SetActive(true);
         SceneController.pause = true;
     }
     public static void closePauseMenu(GameObject pauseMenu)
     {
-        Object.Destroy(pauseMenu);
+        pauseMenu.SetActive(false);
+        //Object.Destroy(pauseMenu);
         SceneController.pause = false;
     }
 

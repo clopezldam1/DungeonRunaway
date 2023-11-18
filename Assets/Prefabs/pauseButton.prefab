@@ -132,15 +132,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1597060877558168338, guid: 7c5cea2155de605418aba7dad447dc6f, type: 3}
-        m_TargetAssemblyTypeName: LaunchPauseMenu, Assembly-CSharp
-        m_MethodName: setPause
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
