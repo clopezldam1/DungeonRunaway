@@ -16,16 +16,12 @@ public class LaunchPauseMenu : MonoBehaviour
         return SceneController.pause;
     }
     public static void launchPauseMenu(GameObject pauseMenu) {
-        //Scene activeScene = SceneManager.GetActiveScene();
-        //activeScene.GetRootGameObjects();
-        //Instantiate(pauseMenu);
         pauseMenu.SetActive(true);
         SceneController.pause = true;
     }
     public static void closePauseMenu(GameObject pauseMenu)
     {
         pauseMenu.SetActive(false);
-        //Object.Destroy(pauseMenu);
         SceneController.pause = false;
     }
 

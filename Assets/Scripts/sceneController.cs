@@ -28,21 +28,14 @@ public class SceneController : MonoBehaviour
                 if (pause)
                 {
                     //cerrar menu pausa
-
                     LaunchPauseMenu.closePauseMenu(overlapScene);
-                    //cerrarEscena(overlapScene, this.GetComponentInParent<Scene>(),false);
-                    //cambiarEscena(activeSceneIndex);
                     pause = false;
 
                 }
                 else
                 {
                     //abrir menu pausa
-
                     LaunchPauseMenu.launchPauseMenu(overlapScene);
-                    //cargarEscena(overlapScene);
-                    //activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                    //cambiarEscena(3); //pausemenu index = 3
                     pause = true;
                 }
             }
@@ -69,43 +62,4 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(buildIndex, LoadSceneMode.Single);
     }
-
-    /*
-     Carga una escena(as GameObject) encima de otra sin cerrar la anterior(superpuesta)
-     */
-    public static void cargarEscena(GameObject overlapScene)
-    {
-        Instantiate(overlapScene);
-    }
-    public static void cargarEscena(int buildIndex)
-    {
-        SceneManager.LoadScene(buildIndex, LoadSceneMode.Additive);
-    }
-
-    /*
-     Elimina de la escena principal los objetos de la escena superpuesta (alternativa no deprecated al unloadScene para las additive scenes)
-     */
-    public static void cerrarEscenaSuperpuesta(GameObject overlapScene, Scene scene)
-    {
-      foreach (GameObject child in scene.GetRootGameObjects())
-        {
-            if (child.tag.Equals("PauseMenu")){
-                Object.Destroy(child);
-            }
-        }
-    }
-    public void cerrarEscena(GameObject overlapScene, Scene scene, bool pause)
-    {
-        //this.pause = pause;
-        foreach (GameObject child in scene.GetRootGameObjects())
-        {
-            if (child.tag.Equals("PauseMenu"))
-            {
-                Object.Destroy(child);
-            }
-          
-        }
-    }
-
-
 }
