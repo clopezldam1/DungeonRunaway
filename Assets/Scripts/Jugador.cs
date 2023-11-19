@@ -15,9 +15,11 @@ public class Jugador : MonoBehaviour
     public int health;
     public bool isHurt;
     [SerializeField] GameObject blood;
+    [SerializeField] GameObject hurtScreen;
+    private float timerHurt;
 
-// Start is called before the first frame update
-void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerAnimator =  GetComponent<Animator>();
@@ -44,7 +46,8 @@ void Start()
         {
             playerAnimator.SetBool("isHurt", true);
             Instantiate(blood, transform.position, transform.rotation);
-         
+            hurtScreen.SetActive(true);
+
 
             if (health < 0)
             {
@@ -55,11 +58,17 @@ void Start()
 
             isHurt = false;
             Destroy(blood, 1f);
-            
+           
         }
         else
         {
-            playerAnimator.SetBool("isHurt", false);
+            timerHurt -= Time.deltaTime;
+            if (timerHurt <= 0)
+            {
+                timerHurt = 1; //Espera 1 sec antes de dejar de estar hurt
+                playerAnimator.SetBool("isHurt", false);
+                hurtScreen.SetActive(false);
+            }
         }
 
     }
@@ -78,8 +87,4 @@ void Start()
         health -= damage;
     }
 
-    public void setIsHurt(bool isHurt) 
-    {
-        this.isHurt = isHurt;
-    }
 }
