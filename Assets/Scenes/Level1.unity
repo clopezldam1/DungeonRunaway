@@ -96848,17 +96848,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6529186419089112538, guid: cf48337386d157d4f96592932552316a, type: 3}
+      propertyPath: maxHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7836195487373058477, guid: cf48337386d157d4f96592932552316a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.9589517
+      value: 1.508765
       objectReference: {fileID: 0}
     - target: {fileID: 7836195487373058477, guid: cf48337386d157d4f96592932552316a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.9589516
+      value: 1.508765
       objectReference: {fileID: 0}
     - target: {fileID: 7836195487373058477, guid: cf48337386d157d4f96592932552316a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.9589517
+      value: 1.508765
       objectReference: {fileID: 0}
     - target: {fileID: 7836195487373058477, guid: cf48337386d157d4f96592932552316a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -96900,7 +96904,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6529186419089112538, guid: cf48337386d157d4f96592932552316a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

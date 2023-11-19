@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 9172194950297998968}
   - component: {fileID: 5482660205323898760}
   - component: {fileID: 2599113460723704327}
+  - component: {fileID: 6529186419089112538}
   - component: {fileID: 262592883336415525}
   m_Layer: 0
   m_Name: Dragon1
@@ -268,6 +269,18 @@ MonoBehaviour:
   speed: 3
   health: 0
   blood: {fileID: 394028940710315157, guid: f22d2da28b51be5498749f5fb87f519c, type: 3}
+--- !u!114 &6529186419089112538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962943344005039142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173c5621ca105f947965cde76f43643d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &262592883336415525
 CircleCollider2D:
   m_ObjectHideFlags: 0

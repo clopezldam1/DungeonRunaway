@@ -55,14 +55,12 @@ namespace BatEnemy
             //si el enemigo está a la derecha del jugador.... 
             if (transform.position.x > player.transform.position.x)
             {
-                //cambiamos facingDirection del enemy(que debido al sprite que estamos usando, es la derecha) para que mire hacia la izquierda
                 transform.rotation = Quaternion.Euler(0, 180, 0);
             }
             else
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
             }
-            //si el enemigo está a la izquierda del jugador, el enemigo mirará a la derecha por defecto
         }
 
         /**método que hace que enemigo se de la vuelta y regrese a su posicion original cuando jugador no está dentro de su rango de ataque**/
