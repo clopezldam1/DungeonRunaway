@@ -32,10 +32,7 @@ public class VueloDragonEndLevel : MonoBehaviour
         velocidad.x = horizontal * speed * 5;
         rb.velocity = velocidad;
 
-        if (rb.position.y < 500) {
-            Console.WriteLine("Jugador ha muerto");
-            //cambiar escena a "You died" screen
-        }
+        
 
     }
 }
