@@ -306,6 +306,7 @@ MonoBehaviour:
   health: 0
   isHurt: 0
   blood: {fileID: 394028940710315157, guid: f22d2da28b51be5498749f5fb87f519c, type: 3}
+  hurtScreen: {fileID: 7532874445364382000, guid: fdd689307c640124685a13af0915487e, type: 3}
 --- !u!114 &3747818333939581857
 MonoBehaviour:
   m_ObjectHideFlags: 0
