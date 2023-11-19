@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 1309487533633921088}
   - component: {fileID: 7036651544756671351}
   - component: {fileID: 2768827360942268989}
+  - component: {fileID: 7202228903150956725}
   - component: {fileID: 5011918762707352866}
   m_Layer: 0
   m_Name: Bat_follow
@@ -231,8 +232,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a314dc0a30ef91544bfccb319a5abd20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
   speed: 1.5
+--- !u!114 &7202228903150956725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7429404730705000387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c517671db1aef4d842d2c3eb058736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 2
+  blood: {fileID: 394028940710315157, guid: f22d2da28b51be5498749f5fb87f519c, type: 3}
 --- !u!61 &5011918762707352866
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class Jugador : MonoBehaviour
     private Vector2 moveInput;
     private Animator playerAnimator;
     public float health = 5f;
+    [SerializeField] GameObject blood;
 
     // Start is called before the first frame update
     void Start()

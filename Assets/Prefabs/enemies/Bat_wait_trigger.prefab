@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2178182655655260688}
   - component: {fileID: 779239579916664744}
   - component: {fileID: 4467617679685230713}
+  - component: {fileID: 7293820065050857077}
   - component: {fileID: 9002544795811406017}
   m_Layer: 0
   m_Name: Bat_wait_trigger
@@ -182,6 +183,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.4047613, y: 2.1010382}
   m_EdgeRadius: 0
+--- !u!114 &7293820065050857077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4958973405967418844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c517671db1aef4d842d2c3eb058736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  blood: {fileID: 394028940710315157, guid: f22d2da28b51be5498749f5fb87f519c, type: 3}
 --- !u!114 &9002544795811406017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ea83f33f08bbdf4c94f8fc94dcd6722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
   speed: 2.5
   chase: 0
   startingPoint: {fileID: 0}

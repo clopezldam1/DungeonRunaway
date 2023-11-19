@@ -2,19 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bat
+namespace BatEnemy
 {
     public class BatFollow : MonoBehaviour
     {
-        private Bat bat; 
         public float speed;
         private GameObject player;
 
         // Start is called before the first frame update
         void Start()
         {
-            bat = new Bat();
-       
             player = GameObject.FindGameObjectWithTag("Player");
         }
 

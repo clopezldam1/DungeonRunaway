@@ -2,26 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Bat { 
+namespace BatEnemy { 
     public class Bat : MonoBehaviour
     {
         [SerializeField] public int maxHealth;
-        public int health;
-        public Rigidbody2D rb;
+        private int health;
+        private Rigidbody2D rb;
+        [SerializeField] GameObject blood;
 
         // Start is called before the first frame update
         void Start()
         {
-          
-           rb = GetComponent<Rigidbody2D>();
+            rb = GetComponent<Rigidbody2D>();
             health = maxHealth;
         }
 
-        // Update is called once per frame
-        void Update()
+        public void TakeDamage(int damage)
         {
-        
+            health -= damage;
+            if(health <= 0)
+            {
+                Instantiate(blood);
+                Destroy(gameObject);
+            }
         }
-
     }
 }
