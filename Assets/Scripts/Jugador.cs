@@ -25,19 +25,17 @@ public class Jugador : MonoBehaviour
         playerAnimator =  GetComponent<Animator>();
         health = maxHealth;
         isHurt = false;
-}
+    }
 
     // Update is called once per frame
     void Update()
     {
-       
         //usar Update para detección de inputs:
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         moveInput = new Vector2(moveX, moveY).normalized; //.normalized para que en diagonal vaya a misma velocidad que en otras direcciones
 
-        //usar update para transición de estados animator:
-        //[Idle <-> walking] 
+        //usar update para transición de estados animator: [Idle <-> walking] 
         playerAnimator.SetFloat("Horizontal", moveX);
         playerAnimator.SetFloat("Vertical", moveY);
         playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
@@ -77,8 +75,6 @@ public class Jugador : MonoBehaviour
     private void FixedUpdate()
     {
         playerRb.MovePosition(playerRb.position + (moveInput * speed * Time.fixedDeltaTime * 4));
-
-       
     }
 
     public void TakeDamage(int damage)

@@ -37,7 +37,6 @@ namespace BatEnemy
         private void ReturnToStartPos()
         {
             transform.position = Vector2.MoveTowards(transform.position, startingPoint.position, speed * Time.deltaTime);
-
         }
     }
 }

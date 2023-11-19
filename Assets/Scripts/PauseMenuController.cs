@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Scene = UnityEngine.SceneManagement.Scene;
 
-public class LaunchPauseMenu : MonoBehaviour
+public class PauseMenuController : MonoBehaviour
 {
     public void setPause(bool pause) 
     {

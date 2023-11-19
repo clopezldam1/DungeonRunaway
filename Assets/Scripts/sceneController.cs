@@ -27,14 +27,14 @@ public class SceneController : MonoBehaviour
                 if (pause)
                 {
                     //cerrar menu pausa
-                    LaunchPauseMenu.closePauseMenu(overlapScene);
+                    PauseMenuController.closePauseMenu(overlapScene);
                     pause = false;
 
                 }
                 else
                 {
                     //abrir menu pausa
-                    LaunchPauseMenu.launchPauseMenu(overlapScene);
+                    PauseMenuController.launchPauseMenu(overlapScene);
                     pause = true;
                 }
             }
