@@ -326,6 +326,46 @@ PrefabInstance:
       propertyPath: bgMusic
       value: 
       objectReference: {fileID: 8300000, guid: 2b914063042e4884198b0ffe44401745, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 45343fed4efb01b40aa45664cec2c4b9, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d1331b197001e146b925c608d1288b0, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 51abd487fee66694e9f3c4fa7f98d32d, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 36872d13d6599a344805758ef0fc8b88, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: fd821602dca3c9247b59b7afdb3bdf0d, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 057a36ce7e7a7e5458503b24cd9f6706, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 13f3b3aabc37bed4189f7429e9f61c15, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0740012d27814c041b59757940c3068b, type: 3}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: sfx.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0740012d27814c041b59757940c3068b, type: 3}
     - target: {fileID: 7283133705627163249, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9633932

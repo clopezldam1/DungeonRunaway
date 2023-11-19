@@ -177,7 +177,15 @@ MonoBehaviour:
   srcBgMusic: {fileID: 3573720926761566779}
   srcSfx: {fileID: 3564204086084341745}
   bgMusic: {fileID: 8300000, guid: d6549189c50f93243bac76351a0d6897, type: 3}
-  sfx: []
+  sfx:
+  - {fileID: 8300000, guid: 45343fed4efb01b40aa45664cec2c4b9, type: 3}
+  - {fileID: 8300000, guid: 9d1331b197001e146b925c608d1288b0, type: 3}
+  - {fileID: 8300000, guid: 51abd487fee66694e9f3c4fa7f98d32d, type: 3}
+  - {fileID: 8300000, guid: 36872d13d6599a344805758ef0fc8b88, type: 3}
+  - {fileID: 8300000, guid: fd821602dca3c9247b59b7afdb3bdf0d, type: 3}
+  - {fileID: 8300000, guid: 057a36ce7e7a7e5458503b24cd9f6706, type: 3}
+  - {fileID: 8300000, guid: 13f3b3aabc37bed4189f7429e9f61c15, type: 3}
+  - {fileID: 8300000, guid: 0740012d27814c041b59757940c3068b, type: 3}
 --- !u!1 &8386411705046800853
 GameObject:
   m_ObjectHideFlags: 0
