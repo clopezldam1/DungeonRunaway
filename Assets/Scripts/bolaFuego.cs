@@ -26,12 +26,6 @@ public class BolaFuego : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Bat bat = collision.GetComponent<Bat>();

@@ -44,6 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837c83257ad3cb44a8e7351adfae1eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthbar: {fileID: 0}
-  healthbarSprites: []
-  jugador: {fileID: 0}
+  healthbar: {fileID: 7823251984751838672, guid: 96f8d1d5579b29a46853f7fc854e3705, type: 3}
+  healthbarSprites:
+  - {fileID: 131200186, guid: 1a7169a7974c1c048acb17ca61f1de5f, type: 3}
+  - {fileID: 710484583, guid: 1a7169a7974c1c048acb17ca61f1de5f, type: 3}
+  - {fileID: -253458925, guid: 1a7169a7974c1c048acb17ca61f1de5f, type: 3}
+  - {fileID: -1638644479, guid: 1a7169a7974c1c048acb17ca61f1de5f, type: 3}
+  - {fileID: 438462041, guid: 1a7169a7974c1c048acb17ca61f1de5f, type: 3}
+  player: {fileID: 2599113460723704327, guid: cf48337386d157d4f96592932552316a, type: 3}
+  hurtScreen: {fileID: 7532874445364382000, guid: fdd689307c640124685a13af0915487e, type: 3}
