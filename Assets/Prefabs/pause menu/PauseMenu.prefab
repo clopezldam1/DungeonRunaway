@@ -1265,7 +1265,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1597060877558168338, guid: 7c5cea2155de605418aba7dad447dc6f, type: 3}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
+        m_MethodName: closePauseMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2421042811833540089}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1037046454372870518}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
+        m_MethodName: setPause
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1107084394258440717}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
         m_MethodName: cambiarEscena
         m_Mode: 3
@@ -1679,6 +1703,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccdc88170bfe8eb4ab69b8445f16101a, type: 3}
+--- !u!114 &1107084394258440717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 736195690629023790, guid: ccdc88170bfe8eb4ab69b8445f16101a, type: 3}
+  m_PrefabInstance: {fileID: 390222657862953507}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdfca5bfe9a5a0c4c8858d4ee4f12784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4426135872860479978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4037074991304182729, guid: ccdc88170bfe8eb4ab69b8445f16101a, type: 3}
@@ -1715,7 +1750,7 @@ PrefabInstance:
     - target: {fileID: 5552376717022098692, guid: 00945bfe1059e164c8d6e3bd1ef05b7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1037046454372870518}
     - target: {fileID: 5552376717022098692, guid: 00945bfe1059e164c8d6e3bd1ef05b7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1739,6 +1774,10 @@ PrefabInstance:
     - target: {fileID: 5552376717022098692, guid: 00945bfe1059e164c8d6e3bd1ef05b7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552376717022098692, guid: 00945bfe1059e164c8d6e3bd1ef05b7e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenuController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5552376717022098692, guid: 00945bfe1059e164c8d6e3bd1ef05b7e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1885,6 +1924,10 @@ PrefabInstance:
     - target: {fileID: 1002200036440343856, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929811115462896903, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
+      propertyPath: bgMusic
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7283133705627163249, guid: f4fece0bbb5c1cc48815f95557933f2c, type: 3}
       propertyPath: m_LocalPosition.x

@@ -11721,9 +11721,57 @@ PrefabInstance:
       value: HUD
       objectReference: {fileID: 0}
     - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6586323075159396188}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1774247052}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: launchPauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: launchPauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PauseMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PauseMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 6586323075159396187}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 6586323075159396187}
+    - target: {fileID: 4474218194881906303, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5111397395153305024, guid: a31772fab7cec2a44a64535cafb05b20, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -96661,6 +96709,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2421042811833540089, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
   m_PrefabInstance: {fileID: 65913309806361235}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6586323075159396188 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1037046454372870518, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+  m_PrefabInstance: {fileID: 65913309806361235}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6586323075159396187}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16801ed66b2cb0f4796268a0583a0f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7257576302910715135
 PrefabInstance:
   m_ObjectHideFlags: 0

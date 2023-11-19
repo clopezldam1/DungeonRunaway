@@ -132,8 +132,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1597060877558168338, guid: 7c5cea2155de605418aba7dad447dc6f, type: 3}
-        m_TargetAssemblyTypeName: LaunchPauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 1037046454372870518, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+        m_TargetAssemblyTypeName: PauseMenuController, Assembly-CSharp
         m_MethodName: launchPauseMenu
         m_Mode: 2
         m_Arguments:
