@@ -268,6 +268,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 347671140864043957, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1845123102105164279}
+    - target: {fileID: 347671140864043957, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: cambiarEscena
+      objectReference: {fileID: 0}
     - target: {fileID: 859748138476400496, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_Camera
       value: 
@@ -316,11 +324,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3965702429472839806, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1845123102105164279}
+    - target: {fileID: 3965702429472839806, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: cerrarJuego
+      objectReference: {fileID: 0}
+    - target: {fileID: 5301787545357433892, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1845123102105164279}
+    - target: {fileID: 5301787545357433892, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: cambiarEscena
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+--- !u!114 &1845123102105164279 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107084394258440717, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+  m_PrefabInstance: {fileID: 1845123102105164278}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdfca5bfe9a5a0c4c8858d4ee4f12784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
