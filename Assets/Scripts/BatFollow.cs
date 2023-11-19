@@ -16,8 +16,5 @@ namespace BatEnemy
             Bat.chase = chase;
             Bat.damage = damage;
         }
-
-
-      
     }
 }

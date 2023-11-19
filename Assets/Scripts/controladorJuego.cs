@@ -10,7 +10,7 @@ public class ControladorJuego : MonoBehaviour
     [SerializeField]  Image healthbar;
     [SerializeField]  Sprite[] healthbarSprites;
     [SerializeField]  Jugador player;
-    [SerializeField] GameObject hurtScreen;
+    [SerializeField] public static GameObject hurtScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +22,15 @@ public class ControladorJuego : MonoBehaviour
     void Update()
     {
         healthbar.sprite = healthbarSprites[player.health];
-        
+     
+    }
+
+    private void FixedUpdate()
+    {
+
         if (player.isHurt)
         {
-           // healthLoss();//change healthbar if taken damage
+            // healthLoss();//change healthbar if taken damage
             hurtScreen.SetActive(true);
         }
         else

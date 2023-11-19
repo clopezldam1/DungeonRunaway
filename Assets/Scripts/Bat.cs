@@ -14,6 +14,7 @@ namespace BatEnemy {
         public static bool chase;
         public static float speed;
         public static int damage;
+        private float timerAttack;
 
         // Start is called before the first frame update
         void Start()
@@ -32,6 +33,16 @@ namespace BatEnemy {
                 FacingDirectionFlip();
             }
 
+            if (Vector2.Distance(transform.position, player.transform.position) <= 0.5f)
+            {
+                //enemy attacks here bc its within reach
+                timerAttack -= Time.deltaTime;
+                if (timerAttack <= 0)
+                {
+                    timerAttack = 2; //Esperan 2 sec antes de volver a atacar
+                    attack();
+                }
+            }
         }
 
         public void TakeDamage(int damage)
@@ -39,10 +50,11 @@ namespace BatEnemy {
             health -= damage;
             if(health <= 0)
             {
-                Instantiate(blood);
+                //enemy dies
                 Destroy(gameObject);
             }
         }
+
         public void attack()
         {
             player.TakeDamage(damage);
@@ -67,11 +79,8 @@ namespace BatEnemy {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
- 
-        public int getDamage()
-        {
-            return damage;
-        }
+
+       
 
     }
 }

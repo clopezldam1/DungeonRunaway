@@ -39,18 +39,12 @@ void Start()
         playerAnimator.SetFloat("Horizontal", moveX);
         playerAnimator.SetFloat("Vertical", moveY);
         playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
-       
-    }
-
-    //FixedUpdate se va llamando cada vez que hay un cambio en las físicas del juego (POR DEFECTO SE LLAMA 50 VECES POR SEGUNDO)
-    private void FixedUpdate()
-    {
-        playerRb.MovePosition(playerRb.position + (moveInput * speed * Time.fixedDeltaTime * 4));
 
         if (isHurt)
         {
             playerAnimator.SetBool("isHurt", true);
             Instantiate(blood, transform.position, transform.rotation);
+         
 
             if (health < 0)
             {
@@ -58,18 +52,34 @@ void Start()
                 Destroy(gameObject);
                 SceneController.cambiarEscena(5);
             }
+
+            isHurt = false;
+            Destroy(blood, 1f);
+            
         }
         else
         {
             playerAnimator.SetBool("isHurt", false);
-            try { GameObject.Destroy(blood); } catch { }
         }
+
+    }
+
+    //FixedUpdate se va llamando cada vez que hay un cambio en las físicas del juego (POR DEFECTO SE LLAMA 50 VECES POR SEGUNDO)
+    private void FixedUpdate()
+    {
+        playerRb.MovePosition(playerRb.position + (moveInput * speed * Time.fixedDeltaTime * 4));
+
+       
     }
 
     public void TakeDamage(int damage)
     {
         isHurt = true;
         health -= damage;
-       
+    }
+
+    public void setIsHurt(bool isHurt) 
+    {
+        this.isHurt = isHurt;
     }
 }
