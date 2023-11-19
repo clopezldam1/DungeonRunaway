@@ -15,15 +15,7 @@ public class BolaFuego : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
-
-        Timer();
-    }
-
-    IEnumerator Timer()
-    {;
-        //despues de disparar, se destruye al pasar 4secs
-        yield return new WaitForSeconds(4);
-        Destroy(gameObject);
+        Destroy(gameObject, 1f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -33,7 +25,7 @@ public class BolaFuego : MonoBehaviour
         {
             bat.TakeDamage(1);
             Instantiate(blood, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
-        Timer();
     }
 }

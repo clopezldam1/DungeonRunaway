@@ -31,8 +31,5 @@ public class VueloDragonEndLevel : MonoBehaviour
         velocidad.y = vertical * speed * 7;
         velocidad.x = horizontal * speed * 5;
         rb.velocity = velocidad;
-
-        
-
     }
 }
