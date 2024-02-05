@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEditor;
-using UnityEditor.U2D;
 using UnityEngine;
 using UnityEngine.UI;
 

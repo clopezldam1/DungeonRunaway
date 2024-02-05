@@ -332,6 +332,38 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: cerrarJuego
       objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 275.59998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 272.33997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212748221760616635, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -101
+      objectReference: {fileID: 0}
     - target: {fileID: 5301787545357433892, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -339,6 +371,18 @@ PrefabInstance:
     - target: {fileID: 5301787545357433892, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: cambiarEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813006637145084280, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813006637145084280, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6813006637145084280, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1,10 +1,5 @@
-using System;
-using Unity.VisualScripting;
-using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Object = UnityEngine.Object;
 
 public class SceneController : MonoBehaviour
 {
