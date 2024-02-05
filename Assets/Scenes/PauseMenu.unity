@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!20 &568591085 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6225638168301982638, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+  m_PrefabInstance: {fileID: 1845123102105164278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1866956311
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +273,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 14320610293852545, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 347671140864043957, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -372,6 +381,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: cambiarEscena
       objectReference: {fileID: 0}
+    - target: {fileID: 5596710063800258894, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 568591085}
     - target: {fileID: 6813006637145084280, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
@@ -383,6 +396,14 @@ PrefabInstance:
     - target: {fileID: 6813006637145084280, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -186
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201501289547518617, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9201501289547518617, guid: 432aa4586bcc86342b06db98737b3b3c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
